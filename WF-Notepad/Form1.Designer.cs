@@ -33,6 +33,7 @@
             this.menuItemFile = new System.Windows.Forms.ToolStripMenuItem();
             this.buttonOpen = new System.Windows.Forms.ToolStripMenuItem();
             this.buttonSaveAs = new System.Windows.Forms.ToolStripMenuItem();
+            this.buttonNewWindow = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -61,7 +62,8 @@
             // 
             this.menuItemFile.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.buttonOpen,
-            this.buttonSaveAs});
+            this.buttonSaveAs,
+            this.buttonNewWindow});
             this.menuItemFile.Name = "menuItemFile";
             this.menuItemFile.Size = new System.Drawing.Size(54, 29);
             this.menuItemFile.Text = "File";
@@ -69,16 +71,23 @@
             // buttonOpen
             // 
             this.buttonOpen.Name = "buttonOpen";
-            this.buttonOpen.Size = new System.Drawing.Size(188, 34);
+            this.buttonOpen.Size = new System.Drawing.Size(270, 34);
             this.buttonOpen.Text = "Open...";
             this.buttonOpen.Click += new System.EventHandler(this.buttonOpen_Click);
             // 
             // buttonSaveAs
             // 
             this.buttonSaveAs.Name = "buttonSaveAs";
-            this.buttonSaveAs.Size = new System.Drawing.Size(188, 34);
+            this.buttonSaveAs.Size = new System.Drawing.Size(270, 34);
             this.buttonSaveAs.Text = "Save As...";
             this.buttonSaveAs.Click += new System.EventHandler(this.buttonSaveAs_Click);
+            // 
+            // buttonNewWindow
+            // 
+            this.buttonNewWindow.Name = "buttonNewWindow";
+            this.buttonNewWindow.Size = new System.Drawing.Size(270, 34);
+            this.buttonNewWindow.Text = "New Window";
+            this.buttonNewWindow.Click += new System.EventHandler(this.buttonNewWindow_Click);
             // 
             // MainForm
             // 
@@ -105,5 +114,6 @@
         private ToolStripMenuItem menuItemFile;
         private ToolStripMenuItem buttonSaveAs;
         private ToolStripMenuItem buttonOpen;
+        private ToolStripMenuItem buttonNewWindow;
     }
 }

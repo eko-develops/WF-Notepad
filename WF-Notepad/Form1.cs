@@ -1,7 +1,3 @@
-using System.IO;
-using System.Windows.Forms;
-using static System.Net.WebRequestMethods;
-
 namespace WF_Notepad
 {
     public partial class MainForm : Form
@@ -17,8 +13,7 @@ namespace WF_Notepad
 
             text = mainText.Text.ToString();
 
-            Dialog.SaveAs(text);
-
+            Dialog.SaveAs(this, text);
         }
 
         private void buttonOpen_Click(object sender, EventArgs e)
@@ -26,6 +21,9 @@ namespace WF_Notepad
             Dialog.OpenFile(this, mainText);
         }
 
-      
+        private void buttonNewWindow_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start(Application.ExecutablePath);
+        }
     }
 }

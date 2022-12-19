@@ -1,12 +1,8 @@
-﻿
-
-using System.Windows.Forms;
-
-namespace WF_Notepad
+﻿namespace WF_Notepad
 {
     class Dialog
     {
-        public static void SaveAs(string text)
+        public static void SaveAs(MainForm mainForm, string text)
         {
             SaveFileDialog saveFileDialog = new SaveFileDialog();
 
@@ -25,6 +21,7 @@ namespace WF_Notepad
 
                 writer.Close();
 
+                mainForm.Text = saveFileDialog.FileName;
             }
         }
 
