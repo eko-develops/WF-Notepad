@@ -47,6 +47,10 @@
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.buttonSelectAll = new System.Windows.Forms.ToolStripMenuItem();
             this.buttonTimeDate = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuItemFormat = new System.Windows.Forms.ToolStripMenuItem();
+            this.buttonWordWrap = new System.Windows.Forms.ToolStripMenuItem();
+            this.buttonFont = new System.Windows.Forms.ToolStripMenuItem();
+            this.dialogFont = new System.Windows.Forms.FontDialog();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -66,7 +70,8 @@
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuItemFile,
-            this.menuItemEdit});
+            this.menuItemEdit,
+            this.menuItemFormat});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 1, 0, 1);
@@ -146,61 +151,88 @@
             // buttonUndo
             // 
             this.buttonUndo.Name = "buttonUndo";
-            this.buttonUndo.Size = new System.Drawing.Size(180, 22);
+            this.buttonUndo.Size = new System.Drawing.Size(129, 22);
             this.buttonUndo.Text = "Undo";
             this.buttonUndo.Click += new System.EventHandler(this.buttonUndo_Click);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(126, 6);
             // 
             // buttonCut
             // 
             this.buttonCut.Name = "buttonCut";
-            this.buttonCut.Size = new System.Drawing.Size(180, 22);
+            this.buttonCut.Size = new System.Drawing.Size(129, 22);
             this.buttonCut.Text = "Cut";
             this.buttonCut.Click += new System.EventHandler(this.buttonCut_Click);
             // 
             // buttonCopy
             // 
             this.buttonCopy.Name = "buttonCopy";
-            this.buttonCopy.Size = new System.Drawing.Size(180, 22);
+            this.buttonCopy.Size = new System.Drawing.Size(129, 22);
             this.buttonCopy.Text = "Copy";
             this.buttonCopy.Click += new System.EventHandler(this.buttonCopy_Click);
             // 
             // buttonPaste
             // 
             this.buttonPaste.Name = "buttonPaste";
-            this.buttonPaste.Size = new System.Drawing.Size(180, 22);
+            this.buttonPaste.Size = new System.Drawing.Size(129, 22);
             this.buttonPaste.Text = "Paste";
             this.buttonPaste.Click += new System.EventHandler(this.buttonPaste_Click);
             // 
             // buttonDelete
             // 
             this.buttonDelete.Name = "buttonDelete";
-            this.buttonDelete.Size = new System.Drawing.Size(180, 22);
+            this.buttonDelete.Size = new System.Drawing.Size(129, 22);
             this.buttonDelete.Text = "Delete";
             this.buttonDelete.Click += new System.EventHandler(this.buttonDelete_Click);
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(126, 6);
             // 
             // buttonSelectAll
             // 
             this.buttonSelectAll.Name = "buttonSelectAll";
-            this.buttonSelectAll.Size = new System.Drawing.Size(180, 22);
+            this.buttonSelectAll.Size = new System.Drawing.Size(129, 22);
             this.buttonSelectAll.Text = "Select All";
             this.buttonSelectAll.Click += new System.EventHandler(this.buttonSelectAll_Click);
             // 
             // buttonTimeDate
             // 
             this.buttonTimeDate.Name = "buttonTimeDate";
-            this.buttonTimeDate.Size = new System.Drawing.Size(180, 22);
+            this.buttonTimeDate.Size = new System.Drawing.Size(129, 22);
             this.buttonTimeDate.Text = "Time/Date";
             this.buttonTimeDate.Click += new System.EventHandler(this.buttonTimeDate_Click);
+            // 
+            // menuItemFormat
+            // 
+            this.menuItemFormat.CheckOnClick = true;
+            this.menuItemFormat.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.buttonWordWrap,
+            this.buttonFont});
+            this.menuItemFormat.Name = "menuItemFormat";
+            this.menuItemFormat.Size = new System.Drawing.Size(57, 22);
+            this.menuItemFormat.Text = "Format";
+            // 
+            // buttonWordWrap
+            // 
+            this.buttonWordWrap.Checked = true;
+            this.buttonWordWrap.CheckOnClick = true;
+            this.buttonWordWrap.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.buttonWordWrap.Name = "buttonWordWrap";
+            this.buttonWordWrap.Size = new System.Drawing.Size(180, 22);
+            this.buttonWordWrap.Text = "Word Wrap";
+            this.buttonWordWrap.Click += new System.EventHandler(this.buttonWordWrap_Click);
+            // 
+            // buttonFont
+            // 
+            this.buttonFont.Name = "buttonFont";
+            this.buttonFont.Size = new System.Drawing.Size(180, 22);
+            this.buttonFont.Text = "Font...";
+            this.buttonFont.Click += new System.EventHandler(this.buttonFont_Click);
             // 
             // MainForm
             // 
@@ -242,5 +274,9 @@
         private ToolStripSeparator toolStripSeparator3;
         private ToolStripMenuItem buttonSelectAll;
         private ToolStripMenuItem buttonTimeDate;
+        private ToolStripMenuItem menuItemFormat;
+        private ToolStripMenuItem buttonWordWrap;
+        private ToolStripMenuItem buttonFont;
+        private FontDialog dialogFont;
     }
 }

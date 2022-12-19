@@ -1,3 +1,5 @@
+using System.Windows.Forms;
+
 namespace WF_Notepad
 {
     public partial class MainForm : Form
@@ -70,6 +72,27 @@ namespace WF_Notepad
         {
             DateTime now = DateTime.Now;
             mainText.Text += now;
+        }
+
+        private void buttonWordWrap_Click(object sender, EventArgs e)
+        {
+            if (mainText.WordWrap)
+            {
+                mainText.WordWrap = false;
+                //buttonWordWrap.Checked = false;
+            } else
+            {
+                //buttonWordWrap.Checked = true;
+                mainText.WordWrap = true;
+            }
+        }
+
+        private void buttonFont_Click(object sender, EventArgs e)
+        {
+            if (dialogFont.ShowDialog() == DialogResult.OK)
+            {
+                mainText.Font = dialogFont.Font;
+            }
         }
     }
 }
