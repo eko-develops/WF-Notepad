@@ -30,5 +30,10 @@ namespace WF_Notepad
         {
             Dialog.Save();
         }
+
+        private void buttonExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
