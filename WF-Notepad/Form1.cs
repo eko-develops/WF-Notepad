@@ -25,5 +25,10 @@ namespace WF_Notepad
         {
             System.Diagnostics.Process.Start(Application.ExecutablePath);
         }
+
+        private void buttonSave_Click(object sender, EventArgs e)
+        {
+            Dialog.Save();
+        }
     }
 }

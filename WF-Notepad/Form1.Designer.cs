@@ -94,8 +94,9 @@
             // buttonSave
             // 
             this.buttonSave.Name = "buttonSave";
-            this.buttonSave.Size = new System.Drawing.Size(220, 34);
+            this.buttonSave.Size = new System.Drawing.Size(270, 34);
             this.buttonSave.Text = "Save";
+            this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
             // 
             // MainForm
             // 
