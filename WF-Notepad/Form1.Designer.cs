@@ -34,6 +34,7 @@
             this.buttonOpen = new System.Windows.Forms.ToolStripMenuItem();
             this.buttonSaveAs = new System.Windows.Forms.ToolStripMenuItem();
             this.buttonNewWindow = new System.Windows.Forms.ToolStripMenuItem();
+            this.buttonSave = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -62,6 +63,7 @@
             // 
             this.menuItemFile.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.buttonOpen,
+            this.buttonSave,
             this.buttonSaveAs,
             this.buttonNewWindow});
             this.menuItemFile.Name = "menuItemFile";
@@ -71,23 +73,29 @@
             // buttonOpen
             // 
             this.buttonOpen.Name = "buttonOpen";
-            this.buttonOpen.Size = new System.Drawing.Size(270, 34);
+            this.buttonOpen.Size = new System.Drawing.Size(220, 34);
             this.buttonOpen.Text = "Open...";
             this.buttonOpen.Click += new System.EventHandler(this.buttonOpen_Click);
             // 
             // buttonSaveAs
             // 
             this.buttonSaveAs.Name = "buttonSaveAs";
-            this.buttonSaveAs.Size = new System.Drawing.Size(270, 34);
+            this.buttonSaveAs.Size = new System.Drawing.Size(220, 34);
             this.buttonSaveAs.Text = "Save As...";
             this.buttonSaveAs.Click += new System.EventHandler(this.buttonSaveAs_Click);
             // 
             // buttonNewWindow
             // 
             this.buttonNewWindow.Name = "buttonNewWindow";
-            this.buttonNewWindow.Size = new System.Drawing.Size(270, 34);
+            this.buttonNewWindow.Size = new System.Drawing.Size(220, 34);
             this.buttonNewWindow.Text = "New Window";
             this.buttonNewWindow.Click += new System.EventHandler(this.buttonNewWindow_Click);
+            // 
+            // buttonSave
+            // 
+            this.buttonSave.Name = "buttonSave";
+            this.buttonSave.Size = new System.Drawing.Size(220, 34);
+            this.buttonSave.Text = "Save";
             // 
             // MainForm
             // 
@@ -99,7 +107,7 @@
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MainForm";
-            this.Text = "Notepad";
+            this.Text = "Untitled";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -115,5 +123,6 @@
         private ToolStripMenuItem buttonSaveAs;
         private ToolStripMenuItem buttonOpen;
         private ToolStripMenuItem buttonNewWindow;
+        private ToolStripMenuItem buttonSave;
     }
 }

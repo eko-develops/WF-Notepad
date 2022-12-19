@@ -2,6 +2,12 @@
 {
     class Dialog
     {
+
+        public static void Save()
+        {
+            
+
+        }
         public static void SaveAs(MainForm mainForm, string text)
         {
             SaveFileDialog saveFileDialog = new SaveFileDialog();
